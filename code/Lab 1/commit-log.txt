@@ -1,0 +1,36 @@
+commit 31a95278b13dc76e0c859f0f029f759ee6ee2f5e
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Aug 24 20:31:39 2025 -0400
+
+    Finishing Lab 1 and solving checkstyle errors
+    Moved the getText() method from the Bill class to the BillText class
+    kept the calculations implemented in the getText() method in the Bill class
+    added getters and setters into the Bill class
+
+commit 5515353a1b0be34d5181b40a0be1fb7eefcf0217
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Aug 24 17:47:35 2025 -0400
+
+    Added Lab 1 to code folder
+    Lab 1 added to repository
+
+commit fc9cf57e8adac02789253b649c2d011cee3192bf
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Thu Aug 21 10:35:15 2025 -0400
+
+    Deleted the Temporary File
+    removed the temp.txt file from the code folder
+
+commit 6f93d7231285911a413a67c2b84158ba98f1ab3e
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Thu Aug 21 09:59:41 2025 -0400
+
+    Adding base project structure
+    1) Creating the README for the project (/README.md)
+    2) Creating the code directory for the project (/code/)
+
+commit 534b157371a9a3773fbff8772a357b4dca1148f0
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Tue Aug 19 10:04:40 2025 -0400
+
+    Initial commit
