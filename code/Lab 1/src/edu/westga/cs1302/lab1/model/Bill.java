@@ -7,8 +7,15 @@ import java.util.ArrayList;
  * @author CS 1302
  * @version Fall 2025
  */
+
 public class Bill {
+	private static final double TIP = 0.2;
+	private static final double TAX = 0.1;
 	private ArrayList<BillItem> items;
+	private double tax = 0.0;
+	private double tip = 0.0;
+	private double subTotal = 0.0;
+	private double total = 0.0;
 	
 	/** Create a new empty Bill
 	 * 
@@ -20,6 +27,53 @@ public class Bill {
 		this.items = new ArrayList<BillItem>();
 	}
 	
+	/** Gets items
+	 * @return items 
+	 */
+	public ArrayList<BillItem> getItems() {
+		return this.items;
+	}
+
+	/** Gets tax
+	 * @return tax the tax added to total
+	 */
+	public double getTax() {
+		return this.tax;
+	}
+
+	/** Gets tip
+	 * @return tip the tip added to the total
+	 */
+	public double getTip() {
+		return this.tip;
+	}
+
+	/** Gets subTotal
+	 * @return subTotal the total of the items
+	 */
+	public double getSubTotal() {
+		return this.subTotal;
+	}
+	
+	/** Gets total
+	 * @return total the sum of subTotal, tip, and tax
+	 */
+	public double getTotal() {
+		return this.total;
+	}
+
+	/** Calculates Bill tips, tax, and totals
+	 * 
+	 * 
+	 */
+	public void calculateBill() {
+		for (BillItem item : this.getItems()) {
+			this.subTotal += item.getAmount();
+		}
+		this.tax = this.getSubTotal() * TAX;
+		this.tip = this.getSubTotal() * TIP;
+		this.total = this.getSubTotal() + this.getTip() + this.getTax();
+	}
 	/** Adds the item to the bill
 	 * 
 	 * @precondition item != null
@@ -27,6 +81,7 @@ public class Bill {
 	 * 
 	 * @param item the item to be added to the bill
 	 */
+	
 	public void addItem(BillItem item) {
 		if (item == null) {
 			throw new IllegalArgumentException("item must not be null.");
@@ -34,30 +89,4 @@ public class Bill {
 		this.items.add(item);
 	}
 	
-	/** Return a String containing the list of bill items and total for the bill.
-	 * 
-	 * @precondition none
-	 * @postcondition none
-	 * 
-	 * @return a String containing the list of bill items and total for the bill
-	 */
-	public String getText() {
-		String text = "ITEMS" + System.lineSeparator();
-		double subTotal = 0.0;
-		for (BillItem item : this.items) {
-			text += item.getName() + " - " + item.getAmount() + System.lineSeparator();
-			subTotal += item.getAmount();
-		}
-		
-		text += System.lineSeparator();
-		text += "SUBTOTAL - $" + subTotal + System.lineSeparator();
-		double tax = subTotal * 0.1;
-		double tip = subTotal * 0.2;
-		text += "TAX - $" + tax + System.lineSeparator();
-		text += "TIP - $" + tip + System.lineSeparator();
-		text += "TOTAL - $" + (subTotal + tip + tax);
-		
-		return text;
-	}
-
 }
