@@ -1,0 +1,46 @@
+commit 954b3f75b3ef95c11bd9a49d0d8b2de8118f6b89
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Wed Sep 3 21:44:20 2025 -0400
+
+    fixing checkstyle errors
+    
+    getting rid of empty lines
+
+commit 9862a19bcdea1f04fc403a9516194ff7ed236e0c
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Wed Sep 3 21:42:24 2025 -0400
+
+    added getText test
+    
+    In BillViewTest added getTextTest
+    completed and working
+
+commit 9ec7392c54d4352431a9d47db8a2e3d8a46e04da
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Wed Sep 3 21:21:17 2025 -0400
+
+    Added BillViewTest class
+
+commit 40d0c2dc053fb0266675fb378b88a20447f7a377
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Wed Sep 3 21:10:13 2025 -0400
+
+    Added test for addItem method
+    
+    test completed and working for addItem
+
+commit b27d304d3e7e2cf4c610e79d40861bd9521f8e14
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Wed Sep 3 20:31:07 2025 -0400
+
+    Added Test File
+    
+    added BillTest.java to test the Bill, BillItem, and BillView methods
+
+commit 5c5540d9bf7b919973ebdc2d630d9fcd5c54a958
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Wed Sep 3 19:04:01 2025 -0400
+
+    Lab 2
+    
+    added starter lab 2 into code folder
