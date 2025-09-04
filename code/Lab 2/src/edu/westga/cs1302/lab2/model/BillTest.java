@@ -14,5 +14,4 @@ class BillTest {
 		assertEquals("name", bill.getItems().get(0).getName());
 		assertEquals(1.99, bill.getItems().get(0).getAmount());
 	}
-
 }
