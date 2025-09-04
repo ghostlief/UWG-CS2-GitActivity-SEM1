@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/aubre/Downloads/junit-jupiter-api-5.13.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
