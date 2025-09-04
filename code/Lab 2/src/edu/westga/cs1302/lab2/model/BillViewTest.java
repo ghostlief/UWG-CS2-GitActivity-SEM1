@@ -27,6 +27,5 @@ class BillViewTest {
 				+ "TOTAL - $3.5100000000000002";
 		assertEquals(expected, receipt);
 	}
-	
 
 }
