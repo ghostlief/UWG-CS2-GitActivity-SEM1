@@ -33,4 +33,10 @@ public class BillCalculator {
 		return subTotal * Bill.TIP_RATE;
 	}
 
+	/** calculates the bill total
+	 * @return the total of the BillItems in the Bill array
+	 */
+	public static double calculateTotal() {
+		return subTotal + calculateTip() + calculateTax();
+	}
 }
