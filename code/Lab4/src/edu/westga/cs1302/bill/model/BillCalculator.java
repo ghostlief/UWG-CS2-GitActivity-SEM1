@@ -24,8 +24,8 @@ public class BillCalculator {
 	/** calculates the tax
 	 * @return the tax 
 	 */
-	public static double calculateTax() {
-		return subTotal * Bill.TAX_RATE;
+	public static double calculateTax(BillItem[] itemArray) {
+		return calculateSubtotal(itemArray) * Bill.TAX_RATE;
 	}
 	
 	/** calculates tip amount
