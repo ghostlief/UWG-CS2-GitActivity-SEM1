@@ -2,6 +2,7 @@ package edu.westga.cs1302.bill.view;
 
 import edu.westga.cs1302.bill.model.Bill;
 import edu.westga.cs1302.bill.model.BillItem;
+import edu.westga.cs1302.bill.model.BillCalculator;
 
 /** Supports displaying the information contained in a Bill.
  * 
@@ -21,16 +22,17 @@ public class BillView {
 	 */
 	public static String getText(Bill bill) {
 		String text = "ITEMS" + System.lineSeparator();
-		double subTotal = 0.0;
+		int arrayListSize = bill.getItems().size();
+		BillItem[] itemArray = new BillItem[arrayListSize];
+		double subTotal = BillCalculator.calculateSubtotal(itemArray);
 		for (BillItem item : bill.getItems()) {
 			text += item.getName() + " - " + item.getAmount() + System.lineSeparator();
-			subTotal += item.getAmount();
 		}
 		
+		double tax = BillCalculator.calculateTax(itemArray);
+		double tip = BillCalculator.calculateTip(itemArray);
 		text += System.lineSeparator();
 		text += "SUBTOTAL - $" + subTotal + System.lineSeparator();
-		double tax = subTotal * Bill.TAX_RATE;
-		double tip = subTotal * Bill.TIP_RATE;
 		text += "TAX - $" + BillView.roundToNearestHundredth(tax) + System.lineSeparator();
 		text += "TIP - $" + BillView.roundToNearestHundredth(tip) + System.lineSeparator();
 		text += "TOTAL - $" + BillView.roundToNearestHundredth(subTotal + tip + tax);
