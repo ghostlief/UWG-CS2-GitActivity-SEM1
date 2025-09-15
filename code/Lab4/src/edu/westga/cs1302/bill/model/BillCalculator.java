@@ -31,8 +31,8 @@ public class BillCalculator {
 	/** calculates tip amount
 	 * @return the tip amount based on the subtotal and tip rate
 	 */
-	public static double calculateTip() {
-		return subTotal * Bill.TIP_RATE;
+	public static double calculateTip(BillItem[] itemArray) {
+		return calculateSubtotal(itemArray) * Bill.TIP_RATE;
 	}
 
 	/** calculates the bill total
