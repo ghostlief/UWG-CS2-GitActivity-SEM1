@@ -1,0 +1,246 @@
+commit 570ede42f906c31e3cc6e20b383bcf46efc1f2e1
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 21:00:58 2025 -0400
+
+    Checkstyle waring fixes
+    
+    empty lines or something
+    unsure of what the specific changes were
+
+commit e9bdffd8716016b745cff46f2bbaf2750cd359a7
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 20:57:53 2025 -0400
+
+    Edits to getText method
+    
+    changed the method to implement the calculateTotal method from the BillCalculator class
+
+commit a7389ff1a2e2f2bb77f976010299e02dc894b945
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 20:56:16 2025 -0400
+
+    updated BillView method
+    
+    changed getText method to implement new methods from the BillCalculator class
+
+commit 6359190ad024d18846626b27f62b3696c8f4dcc2
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 20:15:59 2025 -0400
+
+    Param tags and added param to method
+    
+    added param tags to the calculateTax, calculateTip, and calculateTotal methods
+    added BillItem array parameter to calculateTotal method
+
+commit d1615e9afd51d2f53ca05fbe1d9cf61fd851eda5
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 20:11:34 2025 -0400
+
+    calculateTip parameter change
+    
+    added a BillItem array as the method parameter
+
+commit bbf403973fdf775399e852f6522a69c89bc2dbbb
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 20:10:11 2025 -0400
+
+    calculateTax parameter change
+    
+    added a BillItem array as the parameter
+
+commit 9e9c0fc508c6fddf39c008b7de26314baf363921
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 19:56:01 2025 -0400
+
+    calculateSubtotal parameter change
+    
+    changed the parameter to be an array of BillItem objects
+
+commit 96430b751d29f6e6017a84a51e9916650e5ddd9c
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 19:44:58 2025 -0400
+
+    Calculate Total Method
+    
+    added a method in the BillCalculator class called calculateTotal
+    returns the total which is the sum of the subtotal, tip, and tax
+
+commit 6c43eebed3056c818ae36c98ded3bc7f0629b2a9
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 19:40:11 2025 -0400
+
+    Calculate Tip Method
+    
+    added a method in the BillCalculator class called calculateTip
+    returns the tip amount based on the subtotal and the tip rate
+
+commit c2f76db969becbc732412a9202294bf1f56af71a
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 19:32:43 2025 -0400
+
+    calculate tax method
+    
+    added a method in the BillCalculator class called calculateTax
+    returns the tax based on the subtotal
+
+commit 4b7fbddde95cfe399ba8cb4decdc4b4d1ba4dece
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 19:20:47 2025 -0400
+
+    CalculateSubtotal method added
+    
+    used the calculation of the subtotal from the getText method from the
+    BillView class into the BillCalculator class
+
+commit 1d51b5ea53e3758745284bbbd61c6528ee058b67
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 17:09:09 2025 -0400
+
+    Added BillCalculator class
+    
+    added Javadoc comment for class
+
+commit 5d32aebac879ccae0724c639fa71e50deeb204e6
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 14:52:08 2025 -0400
+
+    Changed BillItem Instance Variables
+    
+    BillItem variable name changed to final
+    BillItem variable amount changed to final
+
+commit a292c4cb7f386667eeed644e5a12ad3d03e2d074
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Sep 14 13:55:31 2025 -0400
+
+    Added Lab 4 to code folder
+
+commit d5016f0b6ace8751936025399a5b007b3ce5042a
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Thu Sep 4 12:50:10 2025 -0400
+
+    Checkstyle Error fixing
+    
+    Attempt 1 did not work the type Stage is missing 'requires transitive'
+    Infos warning 'no grammar constraints' potential solution ineffective
+
+commit 0fbd58baf363cbeb86a426e0fecb81e30fdfe616
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Thu Sep 4 12:26:23 2025 -0400
+
+    MainWindow Changes to FXML
+    
+    Created and added sample skeleton from scenebuilder
+    Pasted skeleton into MainWindow.java
+
+commit 3146a0a0789a2dc45b20f1fd571a8b5c2c6d54bc
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Thu Sep 4 10:46:12 2025 -0400
+
+    Setting Up JavaFX Lab3
+    
+    Added bill model classes to JavaFx sample project
+    renamed project and base package for lab3 along with corresponding references.
+    did not incorporate tests for Bill project classes yet.
+
+commit 954b3f75b3ef95c11bd9a49d0d8b2de8118f6b89
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Wed Sep 3 21:44:20 2025 -0400
+
+    fixing checkstyle errors
+    
+    getting rid of empty lines
+
+commit 9862a19bcdea1f04fc403a9516194ff7ed236e0c
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Wed Sep 3 21:42:24 2025 -0400
+
+    added getText test
+    
+    In BillViewTest added getTextTest
+    completed and working
+
+commit 9ec7392c54d4352431a9d47db8a2e3d8a46e04da
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Wed Sep 3 21:21:17 2025 -0400
+
+    Added BillViewTest class
+
+commit 40d0c2dc053fb0266675fb378b88a20447f7a377
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Wed Sep 3 21:10:13 2025 -0400
+
+    Added test for addItem method
+    
+    test completed and working for addItem
+
+commit b27d304d3e7e2cf4c610e79d40861bd9521f8e14
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Wed Sep 3 20:31:07 2025 -0400
+
+    Added Test File
+    
+    added BillTest.java to test the Bill, BillItem, and BillView methods
+
+commit 5c5540d9bf7b919973ebdc2d630d9fcd5c54a958
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Wed Sep 3 19:04:01 2025 -0400
+
+    Lab 2
+    
+    added starter lab 2 into code folder
+
+commit cd7b24af03a604173433c6a12e053f6514373e6d
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Thu Aug 28 10:45:20 2025 -0400
+
+    Sample project changes
+
+commit ced6031be888cfc87fc3ad12cc28ea65955acd5d
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Thu Aug 28 09:48:25 2025 -0400
+
+    Added JavaFX starter code
+
+commit e23b41c2596795ddd6da9e6cf4bc15e8c21ad414
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Aug 24 20:50:45 2025 -0400
+
+    Lab 1 project added commit log
+
+commit 31a95278b13dc76e0c859f0f029f759ee6ee2f5e
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Aug 24 20:31:39 2025 -0400
+
+    Finishing Lab 1 and solving checkstyle errors
+    Moved the getText() method from the Bill class to the BillText class
+    kept the calculations implemented in the getText() method in the Bill class
+    added getters and setters into the Bill class
+
+commit 5515353a1b0be34d5181b40a0be1fb7eefcf0217
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Sun Aug 24 17:47:35 2025 -0400
+
+    Added Lab 1 to code folder
+    Lab 1 added to repository
+
+commit fc9cf57e8adac02789253b649c2d011cee3192bf
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Thu Aug 21 10:35:15 2025 -0400
+
+    Deleted the Temporary File
+    removed the temp.txt file from the code folder
+
+commit 6f93d7231285911a413a67c2b84158ba98f1ab3e
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Thu Aug 21 09:59:41 2025 -0400
+
+    Adding base project structure
+    1) Creating the README for the project (/README.md)
+    2) Creating the code directory for the project (/code/)
+
+commit 534b157371a9a3773fbff8772a357b4dca1148f0
+Author: ghostlief <aubreycollins62@gmail.com>
+Date:   Tue Aug 19 10:04:40 2025 -0400
+
+    Initial commit
