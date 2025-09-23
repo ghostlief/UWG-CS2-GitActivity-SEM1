@@ -1,6 +1,5 @@
 package edu.westga.cs1302.javafx_sample_starter.views;
 
-
 /**
  * Controller class for drawing various things to our canvas window.
  * 
